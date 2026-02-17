@@ -5,11 +5,8 @@
     "context": "."
   },
   "mounts": [
-    "source=/run/host-services/ssh-auth.sock,target=/ssh-agent,type=bind"
+    "source=${localEnv:HOME}/Library/Mobile Documents/com~apple~CloudDocs/Development/ssh,target=/home/vscode/.ssh/icloud,type=bind"
   ],
-  "containerEnv": {
-    "SSH_AUTH_SOCK": "/ssh-agent"
-  },
   "settings": {
     "terminal.integrated.shell.linux": "/bin/bash"
   },
